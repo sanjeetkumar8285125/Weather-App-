@@ -17,8 +17,8 @@ datahide.classList.add('data_hide');
   }
   else{
       try{
-        let url=`http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=b14425a6554d189a2d7dc18a8e7d7263`
-        const response=await fetch(url)
+        let url=`https://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=b14425a6554d189a2d7dc18a8e7d7263`
+        const response=await fetch(url);
         const data=await response.json();
         const arrdata=[data];
         console.log(arrdata);
